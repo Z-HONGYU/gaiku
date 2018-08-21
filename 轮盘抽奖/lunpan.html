@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    div,img{margin: 0;padding: 0;}
+div{width: 430px;height: 430px;position: relative;background: red;margin: 0 auto;}
+div .img2{width: 423px;height: 423px; margin: 0 auto;}
+div .img1{ position: absolute;left: 136px;top: 90px;width: 155px;height: 197px;}
+</style>
+<body>
+    <div>
+        <img src="./images/lun.png" alt="" class="img2" id="pl">
+        <img src="./images/pan.png" alt="" class="img1" id="po">
+    </div>
+    <script>
+    var oPl=document.getElementById('pl')
+    var oPo=document.getElementById('po')
+    var arr=["三十元免费流量包","20个猫币","20元免费流量包","10元免费流量","5猫币","谢谢参与","10猫币","一等奖","2猫币","100原流量包"]
+
+    var r=0;
+    var s=0;
+
+        oPo.onclick=function(){
+            r=Math.floor(Math.random()*10);
+            s=r*36+1440;
+            oPl.style.transform="rotate("+s+"deg)";
+            oPl.style.transition="5s"
+            setTimeout(function(){
+                alert("恭喜获得"+arr[r]);
+                location.reload();
+            },5500)
+        }
+
+    </script>
+</body>
+</html>
