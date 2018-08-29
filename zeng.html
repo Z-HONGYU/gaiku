@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //dom元素的操作:增,删,改,查
+    //一.增加元素
+    var oH2=document.createElement("h2");//创建元素的内存
+    oH2.innerHTML='俺老孙去也!';
+    document.body.appendChild(oH2);
+
+    var oUl = document.createElement("ul");
+    var oLi = document.createElement("li");
+    oLi.innerHTML= "要想吃得饱,必须要练好!";
+    oUl.appendChild(oLi);
+    document.body.appendChild(oUl);
+
+    for(var i=0;i<8;i++){
+        charsetLi(i+"你爸爸")
+    }
+    document.body.appendChild(oUl);
+
+    function charsetLi(){//创建个无参函数
+        var oLi=document.creatElement("li");
+        oLi.innerHTML="要想吃得好,必须睡得好!";
+        oUl.appendChild(oLi);
+    }
+    function charsetLi(str){//创建一个有参函数
+        var oLi=document.createElement("li");
+        oLi.innerHTML=str;
+        oUl.appendChild(oLi);
+    }
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
