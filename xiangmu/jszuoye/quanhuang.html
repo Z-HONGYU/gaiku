@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/quanhuang.css"/>
+</head>
+<body>
+<div>
+	<img src="images/zuo.gif" id="zuo" />
+	<img src="images/you1.gif" id="you"/>
+</div>
+	
+	<script>
+		
+		var pic=['zuo2.gif','zuo3.gif','zuo4.gif','zuo5.gif','zuo.gif'];
+		 var oZuo=document.getElementById("zuo");
+		 var i=0;
+	i=parseInt(Math.random()*5);
+		oZuo.src="images/"+pic[i];
+		console.log(i,pic[i])
+		console.log(i);
+		 
+		 
+		 
+		 var pic1=['you2.gif','you3.gif','you4.gif','you4.gif','you1.gif'];
+		 var oYou=document.getElementById("you");
+		 var x=0;
+	x=parseInt(Math.random()*5);
+		oYou.src="images/"+pic1[x];
+		console.log(x,pic1[x])
+		console.log(x);
+		 
+		 
+	</script>
+	
+	
+</body>
+</html>
