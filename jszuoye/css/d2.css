@@ -1,0 +1,28 @@
+table,td{
+text-align: center;
+background-color:white;
+border:1px solid;
+border-collapse: collapse;
+font-size: 200px;
+}
+table{
+width: 900px;
+height: 300px;
+}
+input{
+position: relative;
+left: 600px;
+width: 150px;
+height: 50px;
+font-size: 100%;
+ 
+}
+p{
+width: 900px;
+height: 50px;
+
+text-align: center;
+padding-top: 25px;
+ 
+}
+

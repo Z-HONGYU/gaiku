@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style>
+	div {width: 1300px;height: 650px; background: url(images/beijing.jpg);background-size: 100% 100%;}
+	#zuo{width: 250px;height: 250px;margin:100px 0 0 150px ;float: left;}
+	#you{width: 250px;height: 250px;margin:100px 150px  0 0;float: right;}		
+	</style>
+	<body>
+		<div>
+		<img src="images/zuo1.gif" id="zuo"/>
+		<img src="images/you1.gif" id="you"/>
+		</div>
+		
+		<script>
+			var oZuo=document.getElementById('zuo');
+			var oYou=document.getElementById('you');
+			
+			
+			
+			var n=0;
+			
+			function lunbo(){
+				n++;
+				if (n ==5) n = 1;
+				
+				oYou.src='images/you'+ n +'.gif';
+				oZuo.src='images/zuo'+ n +'.gif';
+			}
+			timer=setInterval(lunbo,500)
+			oYou.onmouseover=function(){
+				clearInterval(timer);
+			}
+			oYou.onmouseout=function(){
+				timer=setInterval(lunbo,500)
+			}
+		oZuo.onmouseover=function(){
+				clearInterval(timer);
+			}
+		oZuo.onmouseout=function(){
+				timer=setInterval(lunbo,500)
+			}
+			
+		</script>
+	</body>
+	
+</html>
